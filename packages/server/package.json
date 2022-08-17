@@ -1,0 +1,21 @@
+{
+  "name": "@demo/server",
+  "version": "0.1.0",
+  "description": "apollo graphql server demo",
+  "main": "src/server.js",
+  "author": "Murph Lu",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.10.1",
+    "express": "^4.18.1",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

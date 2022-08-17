@@ -6,7 +6,9 @@
   "author": "Murph.Lu <l7022995@126.com>",
   "license": "MIT",
   "private": true,
-
+  "scripts": {
+    "dev:server": "yarn workspace @demo/server dev"
+  },
   "workspaces": {
     "private": true,
     "packages": [
