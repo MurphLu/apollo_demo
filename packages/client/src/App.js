@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { useHello } from './hooks/useHello'
 
 function App() {
+  const { loading, data, error } = useHello();
+  if(loading) return <div> loading... </div>
+  if(error) return <div> error occured... </div>
+  console.log(data)
   return (
     <div className="App">
       <header className="App-header">

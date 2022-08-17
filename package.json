@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev:server": "yarn workspace @demo/server dev"
+    "dev:server": "yarn workspace @demo/server dev",
+    "start:client": "yarn workspace @demo/client start"
   },
   "workspaces": {
     "private": true,

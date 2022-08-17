@@ -31,5 +31,18 @@ init apolloServer with typeDefs and resolvers and use apolloServer handle the re
 create client app with 
 `npx create-react-app client`
 
+use `yarn workspace @demo/client add @apollo/client graphql` add @apollo/client and graphql to client
 
+connect apolloServer in client
+```JavaScript
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
+const client = new ApolloClient({
+  uri: 'http://localhost:4000/graphql',
+  cache: new InMemoryCache(),
+})
+```
+
+and use this client in ApolloProvider.
+
+then you can use hooks like 'useQuery' to query from apolloServer, 'useMutation' to update data to apolloServer
