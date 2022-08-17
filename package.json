@@ -1,0 +1,16 @@
+{
+  "name": "apollo_demo",
+  "version": "0.1.0",
+  "description": "Apollo Graphql Client And Server Demo",
+  "repository": "https://github.com/MurphLu/apollo_demo.git",
+  "author": "Murph.Lu <l7022995@126.com>",
+  "license": "MIT",
+  "private": true,
+
+  "workspaces": {
+    "private": true,
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
