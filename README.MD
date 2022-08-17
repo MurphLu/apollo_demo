@@ -23,3 +23,5 @@ create `packages/server/src/server.js` and add scripts in `./package.json` and `
 
 init the express server app in server.js
 
+and then you can run `yarn dev:server` to start your server
+
