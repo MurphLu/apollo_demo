@@ -25,3 +25,11 @@ init the express server app in server.js
 
 and then you can run `yarn dev:server` to start your server
 
+init apolloServer with typeDefs and resolvers and use apolloServer handle the request `/graphql`
+
+#### Step3
+create client app with 
+`npx create-react-app client`
+
+
+
