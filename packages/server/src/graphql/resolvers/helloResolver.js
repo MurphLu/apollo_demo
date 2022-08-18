@@ -1,5 +1,5 @@
 // Resolvers tell Apollo Server how to fetch the data associated with a particular type
-const resolvers = {
+const helloResolver = {
   Query: {
     hello: () => {
       return "Hello World";
@@ -7,4 +7,4 @@ const resolvers = {
   }
 };
 
-module.exports = resolvers;
+module.exports = helloResolver;
