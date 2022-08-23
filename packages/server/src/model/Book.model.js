@@ -1,7 +1,9 @@
-const mongoose = require('mongoose');
+const { mongoose } = require('mongoose');
 const { TagSchema } = require('./Tag.model')
 
-const BookSchema = new mongoose.Schema({
+const { Schema } = mongoose;
+
+const BookSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -16,11 +18,13 @@ const BookSchema = new mongoose.Schema({
     type: String
   },
   author: {
-    type: String
+    type: Schema.Types.ObjectId,
+    ref: 'Author'
   },
   corver: {
     type: String
   },
+  tags: [{ type: Schema.Types.ObjectId, ref: 'Tag' }]
 })
 
 const Book = mongoose.model('book', BookSchema)
